@@ -12,15 +12,17 @@ A generic Error object for use when performing XHR requests. XHR component write
 
 XhrError is a tiny object that serves 1 purpose, to signal an error in an XHR requests.
 
-    var XhrError = require('xhrerror');
+```javascript
+var XhrError = require('xhrerror');
 
-    function doAjaxyRequest(url, callback) {
+function doAjaxyRequest(url, callback) {
 
-      ...
-      // Oops, there was an error.
-      var err = new XhrError("Oops, couldn't find that.", 404);
-      callback(err);
-    }
+  ...
+  // Oops, there was an error.
+  var err = new XhrError("Oops, couldn't find that.", 404);
+  callback(err);
+}
+```
 
 ## API
 
