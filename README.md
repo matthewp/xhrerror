@@ -22,6 +22,24 @@ XhrError is a tiny object that serves 1 purpose, to signal an error in an XHR re
       callback(err);
     }
 
+## API
+
+### XhrError(message, status)
+
+Create a new ``XhrError``. Optionally provide a ``message`` string and the ``status`` code.
+
+### XhrError#status
+
+The status code returned from the XHR attempt.
+
+### XhrError#message
+
+Inheriting from ``Error#message``, the string message for the error.
+
+### XhrError#stack
+
+Inheriting from ``Error#stack``, the stack trace from which the XhrError was created.
+
 ## Dependencies
 
 None.
