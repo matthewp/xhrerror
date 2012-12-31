@@ -1,0 +1,21 @@
+{
+  "name": "xhrerror",
+  "repo": "matthewp/xhrerror",
+  "description": "Generic Error object for xhr requests.",
+  "version": "0.0.1",
+  "keywords": [
+    "xhr",
+    "xmlhttprequest"
+    "ajax"
+  ],
+  "dependencies": {
+    "yields/xhr": "*"
+  },
+  "development": {
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "license": "MIT"
+}
