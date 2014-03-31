@@ -26,9 +26,9 @@ function doAjaxyRequest(url, callback) {
 
 ## API
 
-### XhrError(message, status)
+### XhrError(message, status, request)
 
-Create a new ``XhrError``. Optionally provide a ``message`` string and the ``status`` code.
+Create a new ``XhrError``. Optionally provide a ``message`` string, a ``status`` code and the full failed ``request``.
 
 ### XhrError#status
 
@@ -37,6 +37,10 @@ The status code returned from the XHR attempt.
 ### XhrError#message
 
 Inheriting from ``Error#message``, the string message for the error.
+
+### XhrError#request
+
+Inheriting from ``Error#request``, the request obj for the error. Access err.req.getAllResponseHeaders().
 
 ### XhrError#stack
 
